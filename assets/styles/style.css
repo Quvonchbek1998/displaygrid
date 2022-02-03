@@ -3,29 +3,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
+
 .grid-container div{
     background-color: blue;
     padding: 10px;
     }
+.items-one{
+    grid-area: Header;
+}
+.items-two{
+    grid-area: Menu;
+}
+.items-three{
+    grid-area: Main;
+}
+.items-four{
+    grid-area: Right;
+}
+.items-five{
+    grid-area: Footer;
+}
+
 .grid-items{
     display: grid;
     grid-template-areas: 
     "Header Header Header Header Header Header "
     "Menu Main Main Main Main Right"
      "Menu Footer Footer Footer Footer Footer";
+     background-color: #215684;
+     grid-gap: 10px;
+     grid-row: 10px;
 }
-.item-one{
-    grid-area: Header;
+
+.grid-cont{
+    width: 90%;
+    margin: 0 auto;
 }
-.item-two{
-    grid-area: Header;
-}
-.item-three
-    grid-area: Header;
-}
-.item-four{
-    grid-area: Header;
-}
-.item-five{
-    grid-area: Header;
+.grid-cont >div {
+    width: 231%;
 }
