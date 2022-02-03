@@ -3,3 +3,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
+.grid-container div{
+    background-color: blue;
+    padding: 10px;
+    }
+.grid-items{
+    display: grid;
+    grid-template-areas: 
+    "Header Header Header Header Header Header "
+    "Menu Main Main Main Main Right"
+     "Menu Footer Footer Footer Footer Footer";
+}
+.item-one{
+    grid-area: Header;
+}
+.item-two{
+    grid-area: Header;
+}
+.item-three
+    grid-area: Header;
+}
+.item-four{
+    grid-area: Header;
+}
+.item-five{
+    grid-area: Header;
+}
