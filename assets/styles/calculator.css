@@ -1,0 +1,81 @@
+:root{
+    --primerycolor:    #3473DD;
+    --mainusingcolor:  #777777;
+    --mainactivecolor: #3B3B3B;
+    --maingreencolor:  #27CF5E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+h1{
+    font-size: 80px;
+    margin: 100px 30%;
+}
+.grid-calculator{
+    width: 30%;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.screen{
+    width: 96%;
+    height: 60px ;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.grid-button{
+    padding: 10px;
+}
+.first-level{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 40px;
+    grid-gap: 10px;
+    padding-bottom: 10px;
+}
+.second-level{
+    width: 98.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 40px;
+    grid-gap: 10px;
+    padding-bottom: 10px;
+}
+.last-level{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 40px;
+    grid-gap: 10px;
+}
+.first-level .delete {
+    background-color: var(--primerycolor);
+}
+.last-level .equals{
+    background-color: var(--maingreencolor);
+}
+
+.first-level > div button,
+.second-level >div button,
+.last-level >div button{
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 auto;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--mainusingcolor);
+    color: white;
+    transition: 0.5s ;
+}
+.first-level > div button:hover,
+.second-level >div button:hover,
+.last-level >div button:hover{
+    background-color: var(--mainactivecolor);
+}
