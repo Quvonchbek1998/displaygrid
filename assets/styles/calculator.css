@@ -10,7 +10,14 @@
     box-sizing: border-box;}
 h1{
     font-size: 80px;
-    margin: 100px 30%;
+    margin: 50px 28%;
+  background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+  border-image-slice: 1;
+  color: white;
 }
 .grid-calculator{
     width: 30%;
@@ -18,7 +25,7 @@ h1{
     border: 2px solid black;
     border-radius: 10px;
 }
-.screen{
+.screen{    
     width: 96%;
     height: 60px ;
     margin: 0 auto;
